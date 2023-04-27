@@ -1,0 +1,137 @@
+/* Write some CSS below : */
+
+/* 1. Global design first : Body, Headers, Colors, Fonts, Font size, Font weight */
+/* Design General */
+
+body {
+  font-size: 17px;
+  font-family: 'Vollkorn', serif;
+  background-image: url(images/Sans\ titre.png);
+  background-size: cover ;
+  background-position: center;
+  border-color: #BA90C6;
+  color: #E8E5BF;
+  }
+  p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.intro {
+  margin-bottom: 30px;
+}
+
+
+h1 {
+  font-weight: 900;
+  font-size: 35px;
+  color :#ffffff
+  }
+
+h2 {
+  font-weight: 600;
+  font-size: 25px;
+  color :#ffffff
+}
+
+h1, h2, h3 {
+  font-family: 'Vollkorn', serif;
+  text-align: center;
+}
+
+.card-pink {
+  background-color : #A086A0;
+  text-align: center;
+  border-radius: 5px;
+  padding: 40px; 
+  margin: 15px 10px; 
+  box-shadow: 0 20px 40px rgba(247, 219, 148, 0.591);
+}
+
+.card-pink-3 {
+  background-color : #A086A0;
+  text-align: left;
+  border-radius: 5px;
+  padding: 40px; 
+  margin: 15px 10px; 
+  box-shadow: 0 20px 40px rgba(247, 219, 148, 0.591);
+
+
+}
+  .container {
+  width: 700px;
+  margin: 10px auto;
+}
+#sanaa-mter {
+  width: 400px;
+  box-shadow: #343334;
+}
+.btn-bleu {
+  color: #E8E5BF;
+  text-decoration: none;
+  background-color: rgb(146, 55, 112);
+  border-radius: 4px;
+  padding: 15px 20px;
+  font-family: 'Vollkorn', serif;
+  font-weight: 600;
+
+ /* justify-content: center; */
+      
+  }
+.list-inline {
+  list-style: none;
+  padding: 50px;
+}
+
+.list-inline li {
+  display: inline;
+}
+  
+
+.list-inline i {
+  font-size: 50px;
+  color: #f8f8f8;
+  letter-spacing: 30px;
+}
+
+.list-inline i:hover {
+  color: #57405d;
+}
+.competences li{
+  display: inline;
+}
+.btn-bleu:hover {
+  background-color:white;
+  /* Breaking points */
+
+@media (max-width: 960px) {
+  .container {
+    width: 900px;
+  }
+
+  .cards-inline {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 680px;
+  }
+
+  .cards-inline {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+}
